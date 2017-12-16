@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Sender ID</th>
+        <th>Receiver ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Sender City</th>
+        <th>Destination City</th>
+        <th>Track</th>
+    </tr>
+    <tr>
+        <td th:text="${p.id}"></td>
+        <td th:text="${p.senderId}"></td>
+        <td th:text="${p.receiverId}"></td>
+        <td th:text="${p.name}"></td>
+        <td th:text="${p.description}"></td>
+        <td th:text="${p.senderCity}"></td>
+        <td th:text="${p.destinationCity}"></td>
+        <td>
+            <form th:action="@{/user/track}" method="post">
+                <input type="hidden" th:value="${p.id}" name="id"/>
+                <input type="submit" value="Track"/>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+

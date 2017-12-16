@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>City</th>
+        <th>Time</th>
+    </tr>
+    <tr th:each="route : ${r}">
+        <td th:text="${route.city}"></td>
+        <td th:text="${route.time}"></td>
+    </tr>
+</table>
+</body>
+</html>

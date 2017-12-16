@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/user/search}" method="post">
+    Package ID:
+    <input type="number" name="id"/><br/>
+    <input type="submit"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="app.entity.Package" table="package">
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <property name="name" column="name" type="string" />
+        <property name="description" column="description" type="string" />
+        <property name="sender_id" column="sender_id" type="int"/>
+        <property name="receiver_id" column="receiver_id" type="int"/>
+        <property name="destinationCity" column="destination_city" type="string"/>
+        <property name="senderCity" column="sender_city" type="string"/>
+        <property name="tracking" column="tracking" type="boolean"/>
+    </class>
+</hibernate-mapping>

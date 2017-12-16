@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a th:href="@{/admin/addPackage}">Add a new package</a><br/>
+        </li>
+        <li>
+            <a th:href="@{/admin/removePackage}">Remove a package</a><br/>
+        </li>
+        <li>
+            <a th:href="@{/admin/registerPackage}">Register package for tracking</a><br/>
+        </li>
+        <li>
+            <a th:href="@{/admin/updateStatus}">Update package status</a><br/>
+        </li>
+    </ul>
+</body>
+</html>
